@@ -19,7 +19,7 @@ PATH_REPO = str(os.getcwd()) # Folder within CWD to run the code.
 app = Flask(__name__) # Variable for flask server application, to be called upon.
 
 # Create an endpoint which receives requests from the GitHub API.
-@app.route('/', methods=['POST']) # Triggered by URL localhost:5000/
+@app.route('/', methods=['POST']) # Triggered by URL localhost:8080/
 def handler_Push():
 
     data = request.json # Request the data from the event.
